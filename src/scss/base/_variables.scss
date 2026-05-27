@@ -1,0 +1,15 @@
+// Tipografía.
+$font-family: 'Manrope', sans-serif;
+$font-size: 1.6rem;
+
+// Colores.
+$pink-400: hsl(0deg 36% 70%);
+$red-500: hsl(0deg 93% 68%);
+$gray-900: hsl(0deg 6% 24%);
+$gradient-light: linear-gradient(135deg, hsl(0deg 0% 100%), hsl(0deg 100% 98%));
+$gradient-pink: linear-gradient(135deg, hsl(0deg 80% 86%), hsl(0deg 74% 74%));
+
+// Dispositivos.
+$tablet: 768px;
+$laptop: 1024px;
+$desktop: 1440px;

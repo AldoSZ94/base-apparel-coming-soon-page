@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>base-apparel-coming-soon-page</title>
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header container">
+      <img class="header__img" src="./src/assets/img/logo.svg" alt="Logo" />
+    </header>
+    <section class="hero">
+      <picture>
+        <!-- Desktop (AVIF) -->
+        <source srcset="./src/assets/img/hero-desktop.avif" type="image/avif" media="(min-width: 1440px)" />
+
+        <!-- Desktop (WebP) -->
+        <source srcset="./src/assets/img/hero-desktop.webp" type="image/webp" media="(min-width: 1440px)" />
+
+        <!-- Mobile (AVIF) -->
+        <source srcset="./src/assets/img/hero-mobile.avif" type="image/avif" />
+
+        <!-- Mobile (WebP) -->
+        <source srcset="./src/assets/img/hero-mobile.webp" type="image/webp" />
+
+        <!-- Fallback -->
+        <img class="hero__img" src="./src/assets/img/hero-mobile.jpg" alt="Hero image" />
+      </picture>
+    </section>
+    <main class="content container">
+      <h1 class="content__heading">WE'RE <span class="content__heading-highlight">COMING SOON</span></h1>
+      <p class="content__description">
+        Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with
+        announcement and our lunch deals.
+      </p>
+      <form class="content__form" novalidate>
+        <label class="sr-only" for="email">Email Address</label>
+        <input id="email" class="content__input" type="email" autocomplete="email" required placeholder="Email Address" />
+        <img class="content__error" src="./src/assets/img/icon-error.svg" alt="" />
+        <button class="content__button" type="submit" aria-label="Submit Email">
+          <img src="./src/assets/img/icon-arrow.svg" alt="" />
+        </button>
+        <p class="content__error-text">Please provide a valid email</p>
+      </form>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

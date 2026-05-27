@@ -1,0 +1,37 @@
+@use './variables' as v;
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  height: 100vh;
+  font-family: v.$font-family;
+  font-size: v.$font-size;
+  color: v.$pink-400;
+  background: url('../../assets/img/bg-pattern-desktop.svg') no-repeat center / cover;
+
+  @media (min-width: v.$desktop) {
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 55% 45%;
+  }
+}
+
+.container {
+  width: 85%;
+  max-width: 120rem;
+  margin: 0 auto;
+
+  @media (min-width: v.$desktop) {
+    width: 70%;
+  }
+}
